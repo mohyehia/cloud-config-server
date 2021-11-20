@@ -8,6 +8,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
+        use-new-id-generator-mappings: false
     hibernate:
       ddl-auto: none
     show-sql: true
