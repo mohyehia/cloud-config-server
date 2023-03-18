@@ -1,4 +1,5 @@
-
+server:
+  port: 0
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -11,3 +12,17 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
+
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 1.0
+      
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:password@localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+    prefer-ip-address: true      
