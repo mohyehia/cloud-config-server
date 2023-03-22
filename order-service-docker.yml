@@ -1,11 +1,13 @@
-
-server:
-  port: 0
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://inventory-service-mysql:3300/inventory-service
+    url: jdbc:mysql://order-service-mysql:3306/order-service
 
+  # kafka properties
+  kafka:
+    bootstrap-servers: broker:9092
+
+  # zipkin configuration
   zipkin:
     base-url: http://zipkin:9411
   sleuth:
@@ -17,5 +19,4 @@ eureka:
     service-url:
       defaultZone: http://eureka:password@discovery-server:8761/eureka/
   instance:
-    instance-id: ${spring.application.name}:${random.value}
-    prefer-ip-address: true  
+    prefer-ip-address: true
