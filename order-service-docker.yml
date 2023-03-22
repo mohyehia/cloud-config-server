@@ -2,6 +2,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://order-service-mysql:3306/order-service
+    username: order-service
+    password: P@ssw0rd
 
   # kafka properties
   kafka:

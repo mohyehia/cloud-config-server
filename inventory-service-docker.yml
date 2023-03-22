@@ -5,6 +5,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://inventory-service-mysql:3300/inventory-service
+    username: inventory-service
+    password: P@ssw0rd
 
   zipkin:
     base-url: http://zipkin:9411
