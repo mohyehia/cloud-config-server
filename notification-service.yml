@@ -31,3 +31,10 @@ eureka:
       defaultZone: http://eureka:password@localhost:8761/eureka/
   instance:
     prefer-ip-address: true
+
+# actuator prometheus endpoint
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus"

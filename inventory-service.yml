@@ -26,3 +26,10 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${random.value}
     prefer-ip-address: true      
+
+# actuator prometheus endpoint
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus"

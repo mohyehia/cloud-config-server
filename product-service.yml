@@ -18,3 +18,10 @@ eureka:
     prefer-ip-address: true
 server:
   port: 0
+
+# actuator prometheus endpoint
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus"
