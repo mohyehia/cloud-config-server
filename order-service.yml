@@ -56,6 +56,11 @@ management:
       
 # resilience4j properties
 resilience4j:
+  timelimiter:
+    instances:
+      inventory:
+        timeout-duration: 5s
+
   circuitbreaker:
     instances:
       inventory:
@@ -69,12 +74,9 @@ resilience4j:
         automatic-transition-from-open-to-half-open-enabled: true
         ignoreExceptions:
           - com.moh.yehia.orderservice.exception.InvalidOrderException
-  timelimiter:
-    instances:
-      inventory:
-        timeout-duration: 5s
+
   retry:
     instances:
       inventory:
         max-attempts: 3
-        wait-duration: 5s      
+        wait-duration: 5s
