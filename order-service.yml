@@ -60,6 +60,7 @@ resilience4j:
     instances:
       inventory:
         timeout-duration: 5s
+        cancel-running-feature: true
 
   circuitbreaker:
     instances:
