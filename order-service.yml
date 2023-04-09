@@ -70,7 +70,7 @@ resilience4j:
   timelimiter:
     instances:
       inventory:
-        timeout-duration: 10s
+        timeout-duration: 15s
   retry:
     instances:
       inventory:
