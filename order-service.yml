@@ -53,7 +53,13 @@ management:
   endpoint:
     health:
       show-details: always
-      
+
+  cloud:
+    circuitbreaker:
+      resilience4j:
+        enabled: true
+
+
 # resilience4j properties
 resilience4j:
   timelimiter:
