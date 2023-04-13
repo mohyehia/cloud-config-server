@@ -56,12 +56,6 @@ management:
 
 # resilience4j properties
 resilience4j:
-  timelimiter:
-    instances:
-      inventory:
-        timeout-duration: 5s
-        cancel-running-feature: true
-
   circuitbreaker:
     configs:
       default:
