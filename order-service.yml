@@ -68,6 +68,7 @@ resilience4j:
         registerHealthIndicator: true
     instances:
       inventory:
+        registerHealthIndicator: true
         event-consumer-buffer-size: 10
         sliding-window-type: count_based
         sliding-window-size: 5
