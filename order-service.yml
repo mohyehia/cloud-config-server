@@ -54,12 +54,6 @@ management:
     health:
       show-details: always
 
-  cloud:
-    circuitbreaker:
-      resilience4j:
-        enabled: true
-
-
 # resilience4j properties
 resilience4j:
   timelimiter:
@@ -69,9 +63,11 @@ resilience4j:
         cancel-running-feature: true
 
   circuitbreaker:
+    configs:
+      default:
+        registerHealthIndicator: true
     instances:
       inventory:
-        register-health-indicator: true
         event-consumer-buffer-size: 10
         sliding-window-type: count_based
         sliding-window-size: 5
