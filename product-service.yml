@@ -21,7 +21,7 @@ spring:
         spring:
           json:
             type:
-              mapping: productCreatedEvent:com.moh.yehia.productservice.model.response.productCreatedEvent
+              mapping: productCreatedEvent:com.moh.yehia.productservice.model.response.ProductCreatedEvent
       
 eureka:
   client:
