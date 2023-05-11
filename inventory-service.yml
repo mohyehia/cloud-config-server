@@ -3,9 +3,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/inventory-service
-    username: root
-    password: root
+    url: jdbc:mysql://inventory-service-mysql:3300/inventory-service
+    username: inventory-service
+    password: P@ssw0rd
   jpa:
     hibernate:
       ddl-auto: none
