@@ -32,7 +32,7 @@ eureka:
     prefer-ip-address: true
 
 server:
-  port: 0
+  port: 9804
   servlet:
     context-path: /product-service
 

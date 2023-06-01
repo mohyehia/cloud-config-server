@@ -23,7 +23,7 @@ spring:
       group-id: notificationId
 
 server:
-  port: 0
+  port: 9802
 
 eureka:
   client:
