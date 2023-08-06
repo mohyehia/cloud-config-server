@@ -5,10 +5,6 @@ spring:
     username: order-service
     password: P@ssw0rd
 
-  # kafka properties
-  kafka:
-    bootstrap-servers: broker:9092
-
   # zipkin configuration
   zipkin:
     base-url: http://zipkin:9411

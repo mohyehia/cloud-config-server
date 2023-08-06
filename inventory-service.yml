@@ -18,23 +18,6 @@ spring:
   sleuth:
     sampler:
       probability: 1.0
-
-  # kafka configuration properties
-  kafka:
-    bootstrap-servers: localhost:9092
-    template:
-      default-topic: productCreatedNotificationTopic
-    consumer:
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-      properties:
-        spring:
-          json:
-            type:
-              mapping: productCreatedEvent:com.moh.yehia.inventoryservice.model.response.ProductCreatedEvent
-            trusted:
-              packages: "*"
-      group-id: productCreatedNotificationId
       
 eureka:
   client:

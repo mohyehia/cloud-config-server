@@ -5,10 +5,6 @@ spring:
     sampler:
       probability: 1.0
 
-  # kafka configuration properties
-  kafka:
-    bootstrap-servers: broker:29092
-
 eureka:
   client:
     service-url:
