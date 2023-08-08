@@ -3,6 +3,8 @@ spring:
   data:
     mongodb:
       uri: mongodb://product-service-mongo:27017/product-service
+  rabbitmq:
+    host: rabbitmq-container
   zipkin:
     base-url: http://zipkin:9411
   sleuth:
