@@ -5,6 +5,8 @@ spring:
     sampler:
       probability: 1.0
 
+  rabbitmq:
+    host: rabbitmq-container
 eureka:
   client:
     service-url:

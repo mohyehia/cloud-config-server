@@ -5,6 +5,8 @@ spring:
     username: order-service
     password: P@ssw0rd
 
+  rabbitmq:
+    host: rabbitmq-container
   # zipkin configuration
   zipkin:
     base-url: http://zipkin:9411
