@@ -2,6 +2,7 @@ server:
   port: 9803
   servlet:
     context-path: /order-service
+
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -14,11 +15,13 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
+
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
+
   security:
     oauth2:
       resourceserver:

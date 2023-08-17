@@ -1,9 +1,7 @@
 
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://inventory-service-mysql:3300/inventory-service
-    username: inventory-service
     password: P@ssw0rd
 
   rabbitmq:
@@ -11,14 +9,8 @@ spring:
 
   zipkin:
     base-url: http://zipkin:9411
-  sleuth:
-    sampler:
-      probability: 1.0
       
 eureka:
   client:
     service-url:
       defaultZone: http://eureka:password@discovery-server:8761/eureka/
-  instance:
-    instance-id: ${spring.application.name}:${random.value}
-    prefer-ip-address: true  

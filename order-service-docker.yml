@@ -1,8 +1,6 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://order-service-mysql:3306/order-service
-    username: order-service
     password: P@ssw0rd
 
   rabbitmq:
@@ -17,13 +15,8 @@ spring:
   # zipkin configuration
   zipkin:
     base-url: http://zipkin:9411
-  sleuth:
-    sampler:
-      probability: 1.0
       
 eureka:
   client:
     service-url:
       defaultZone: http://eureka:password@discovery-server:8761/eureka/
-  instance:
-    prefer-ip-address: true
