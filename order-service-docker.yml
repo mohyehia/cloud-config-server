@@ -4,7 +4,7 @@ spring:
     password: P@ssw0rd
 
   rabbitmq:
-    host: rabbitmq-container
+    host: rabbitmq
 
   security:
     oauth2:

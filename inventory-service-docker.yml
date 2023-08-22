@@ -5,7 +5,7 @@ spring:
     password: P@ssw0rd
 
   rabbitmq:
-    host: rabbitmq-container
+    host: rabbitmq
 
   zipkin:
     base-url: http://zipkin:9411
