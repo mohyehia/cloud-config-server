@@ -3,7 +3,7 @@ spring:
     base-url: http://zipkin:9411
 
   rabbitmq:
-    host: rabbitmq
+    host: rabbitmq-container
 eureka:
   client:
     service-url:

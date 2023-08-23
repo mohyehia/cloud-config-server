@@ -4,7 +4,7 @@ spring:
     mongodb:
       uri: mongodb://product-service-mongo:27017/product-service
   rabbitmq:
-    host: rabbitmq
+    host: rabbitmq-container
 
   zipkin:
     base-url: http://zipkin:9411
