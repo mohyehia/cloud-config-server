@@ -1,0 +1,21 @@
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://product-service-mongo:27017/product-service
+  rabbitmq:
+    host: rabbitmq-0.rabbitmq
+
+  zipkin:
+    base-url: http://zipkin-0.zipkin:9411
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://keycloak:8080/realms/microservices
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:password@discovery-service-0.discovery-service:8761/eureka
